@@ -12,9 +12,17 @@ const Wrapper = styled.header`
 const LeftElement = styled.div``;
 const HeaderContainer = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding: 1rem;
   align-items: center;
+  position: relative;
+`;
+
+const RightSection = styled.div`
+  position: absolute;
+  right: 24px;
+  z-index: 1;
+  max-width: max-content;
 `;
 
 const Header = memo(() => {
@@ -23,7 +31,9 @@ const Header = memo(() => {
       <HeaderContainer>
         <LeftElement />
         <Tabbar />
-        <RightHeader />
+        <RightSection>
+          <RightHeader />
+        </RightSection>
       </HeaderContainer>
     </Wrapper>
   );

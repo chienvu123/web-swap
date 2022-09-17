@@ -1,6 +1,7 @@
-import React, { memo, useCallback, useState } from "react";
+import React, { memo, useCallback, useContext, useState } from "react";
 import styled from "styled-components";
 import colors from "../Colors";
+import { AppContext } from "../context";
 const listTab = [
   {
     label: "Swap",
@@ -28,10 +29,15 @@ const ItemWrapper = styled.div<{ active: boolean }>`
   border-radius: 8px;
   cursor: pointer;
   margin: 0 2px;
+  color: rgb(195, 197, 203);
+  &:hover {
+    color: #fff;
+  }
   ${(p) =>
     p.active &&
     `
-    background: ${colors.secondDark}
+    background: ${colors.secondDark};
+    color: #fff;
   `}
 `;
 const TabText = styled.span``;
