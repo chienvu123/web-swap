@@ -1,7 +1,6 @@
 import React, { memo, useCallback, useContext, useState } from "react";
 import styled from "styled-components";
-import colors from "../Colors";
-import { AppContext } from "../context";
+import colors from "../../Colors";
 const listTab = [
   {
     label: "Swap",

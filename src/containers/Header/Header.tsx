@@ -6,7 +6,7 @@ import Tabbar from "./Tabbar";
 const Wrapper = styled.header`
   position: fixed;
   top: 0px;
-  z-index: 1020;
+  z-index: 20;
   width: 100%;
 `;
 const LeftElement = styled.div``;

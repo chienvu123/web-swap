@@ -1,9 +1,9 @@
 import React, { memo, useCallback, useContext, useState } from "react";
 import styled from "styled-components";
-import colors from "../Colors";
-import listNetworks, { INetworkType } from "../constants/listNetwork";
-import { AppContext } from "../context";
-import ArrowDown from "./ArrowDown";
+import colors from "../../Colors";
+import listNetworks, { INetworkType } from "../../constants/listNetwork";
+import { AppContext } from "../../context";
+import ArrowDown from "../../components/ArrowDown";
 
 const Wrapper = styled.div``;
 const Button = styled.div`
